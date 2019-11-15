@@ -1,0 +1,75 @@
+body {
+  background-color: #fbffe7;
+}
+
+.title {
+  text-align: center;
+  font-family: fantasy;
+  color: #60c5a3;
+  font-size: 3em;
+}
+
+table {
+  border-collapse: collapse;
+  margin: auto;
+  table-layout: fixed;
+}
+th,
+td {
+  width: 50px;
+  height: 50px;
+  border: 2px solid #52c0b7;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+}
+
+button:hover {
+  background-color: #b9c9c7;
+}
+
+button {
+  width: 50px;
+  height: 50px;
+  background-color: inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+}
+
+.damage {
+  background-image: url("./explosion.jpg");
+  background-size: contain;
+}
+
+.killed {
+  background-color: black;
+}
+
+.killed:hover {
+  background-color: black;
+  cursor: pointer;
+}
+
+.statistic {
+  text-align: center;
+  display: none;
+}
+
+.statistic__title {
+  font-family: monospace;
+  color: #8c9692;
+  font-size: 2em;
+}
+
+.statistic__item {
+  font-family: monospace;
+  color: #a1b1ab;
+  font-size: 1.5em;
+}
+
+.miss::after {
+  content: "x";
+}

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1 class="title">Battle Ships</h1>
+      <div class="statistic">
+        <h4 class="statistic__title">Статистика игры:</h4>
+        <p class="statistic__item">
+          Потрачено времени: <span id="timer"></span>
+        </p>
+        <p class="statistic__item">
+          Количество выстрелов: <span id="shots"></span>
+        </p>
+        <p class="statistic__item">
+          Процент попаданий: <span id="percent"></span> %
+        </p>
+      </div>
+
+      <table id="sea" width="500" height="500">
+        <tr>
+          <th><button id="a1" class=""></button></th>
+          <th><button id="b1" class=""></button></th>
+          <th><button id="c1" class=""></button></th>
+          <th><button id="d1" class=""></button></th>
+          <th><button id="e1" class=""></button></th>
+          <th><button id="f1" class=""></button></th>
+          <th><button id="g1" class=""></button></th>
+          <th><button id="h1" class=""></button></th>
+          <th><button id="i1" class=""></button></th>
+          <th><button id="j1" class=""></button></th>
+        </tr>
+        <tr>
+          <td><button id="a2" class=""></button></td>
+          <td><button id="b2" class=""></button></td>
+          <td><button id="c2" class=""></button></td>
+          <td><button id="d2" class=""></button></td>
+          <td><button id="e2" class=""></button></td>
+          <td><button id="f2" class=""></button></td>
+          <td><button id="g2" class=""></button></td>
+          <td><button id="h2" class=""></button></td>
+          <td><button id="i2" class=""></button></td>
+          <td><button id="j2" class=""></button></td>
+        </tr>
+        <tr>
+          <td><button id="a3" class=""></button></td>
+          <td><button id="b3" class=""></button></td>
+          <td><button id="c3" class=""></button></td>
+          <td><button id="d3" class=""></button></td>
+          <td><button id="e3" class=""></button></td>
+          <td><button id="f3" class=""></button></td>
+          <td><button id="g3" class=""></button></td>
+          <td><button id="h3" class=""></button></td>
+          <td><button id="i3" class=""></button></td>
+          <td><button id="j3" class=""></button></td>
+        </tr>
+        <tr>
+          <td><button id="a4" class=""></button></td>
+          <td><button id="b4" class=""></button></td>
+          <td><button id="c4" class=""></button></td>
+          <td><button id="d4" class=""></button></td>
+          <td><button id="e4" class=""></button></td>
+          <td><button id="f4" class=""></button></td>
+          <td><button id="g4" class=""></button></td>
+          <td><button id="h4" class=""></button></td>
+          <td><button id="i4" class=""></button></td>
+          <td><button id="j4" class=""></button></td>
+        </tr>
+        <tr>
+          <td><button id="a5" class=""></button></td>
+          <td><button id="b5" class=""></button></td>
+          <td><button id="c5" class=""></button></td>
+          <td><button id="d5" class=""></button></td>
+          <td><button id="e5" class=""></button></td>
+          <td><button id="f5" class=""></button></td>
+          <td><button id="g5" class=""></button></td>
+          <td><button id="h5" class=""></button></td>
+          <td><button id="i5" class=""></button></td>
+          <td><button id="j5" class=""></button></td>
+        </tr>
+        <tr>
+          <td><button id="a6" class=""></button></td>
+          <td><button id="b6" class=""></button></td>
+          <td><button id="c6" class=""></button></td>
+          <td><button id="d6" class=""></button></td>
+          <td><button id="e6" class=""></button></td>
+          <td><button id="f6" class=""></button></td>
+          <td><button id="g6" class=""></button></td>
+          <td><button id="h6" class=""></button></td>
+          <td><button id="i6" class=""></button></td>
+          <td><button id="j6" class=""></button></td>
+        </tr>
+        <tr>
+          <td><button id="a7" class=""></button></td>
+          <td><button id="b7" class=""></button></td>
+          <td><button id="c7" class=""></button></td>
+          <td><button id="d7" class=""></button></td>
+          <td><button id="e7" class=""></button></td>
+          <td><button id="f7" class=""></button></td>
+          <td><button id="g7" class=""></button></td>
+          <td><button id="h7" class=""></button></td>
+          <td><button id="i7" class=""></button></td>
+          <td><button id="j7" class=""></button></td>
+        </tr>
+        <tr>
+          <td><button id="a8" class=""></button></td>
+          <td><button id="b8" class=""></button></td>
+          <td><button id="c8" class=""></button></td>
+          <td><button id="d8" class=""></button></td>
+          <td><button id="e8" class=""></button></td>
+          <td><button id="f8" class=""></button></td>
+          <td><button id="g8" class=""></button></td>
+          <td><button id="h8" class=""></button></td>
+          <td><button id="i8" class=""></button></td>
+          <td><button id="j8" class=""></button></td>
+        </tr>
+        <tr>
+          <td><button id="a9" class=""></button></td>
+          <td><button id="b9" class=""></button></td>
+          <td><button id="c9" class=""></button></td>
+          <td><button id="d9" class=""></button></td>
+          <td><button id="e9" class=""></button></td>
+          <td><button id="f9" class=""></button></td>
+          <td><button id="g9" class=""></button></td>
+          <td><button id="h9" class=""></button></td>
+          <td><button id="i9" class=""></button></td>
+          <td><button id="j9" class=""></button></td>
+        </tr>
+        <tr>
+          <td><button id="a10" class=""></button></td>
+          <td><button id="b10" class=""></button></td>
+          <td><button id="c10" class=""></button></td>
+          <td><button id="d10" class=""></button></td>
+          <td><button id="e10" class=""></button></td>
+          <td><button id="f10" class=""></button></td>
+          <td><button id="g10" class=""></button></td>
+          <td><button id="h10" class=""></button></td>
+          <td><button id="i10" class=""></button></td>
+          <td><button id="j10" class=""></button></td>
+        </tr>
+      </table>
+    </div>
+    <script src="mainScript.js"></script>
+  </body>
+</html>
