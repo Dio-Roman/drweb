@@ -24,9 +24,12 @@ td {
   padding: 0;
 }
 
-button:hover {
+button:hover, 
+th:hover,
+td:hover {
   background-color: #b9c9c7;
 }
+
 
 button {
   width: 50px;
@@ -40,12 +43,14 @@ button {
 }
 
 .damage {
-  background-image: url("./explosion.jpg");
+  background-image: url("./explosion.png");
+  box-shadow: 0px 4px #fffdfd;
   background-size: contain;
 }
 
 .killed {
   background-color: black;
+  box-shadow: 0px 5px black;
 }
 
 .killed:hover {

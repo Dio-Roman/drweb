@@ -72,14 +72,19 @@ floorsForAllShips.map((el, i)=> {
   allShipsArr.push(createShip(el, i)) ;
 })
 
-// console.log(allShipsArr);
+console.log(allShipsArr);
 
 const checkIsKilled = (el) => {
   if (el.position.length === el.damageCount) {
     el.position.forEach(el => {
       document.querySelector(`#${el}`).classList = "killed";
     });
-    allShipsArr.splice(el.id, 1);  // удаляет из массива убитый корабль
+    for(let i=0; i<allShipsArr.length; i++) {
+      if (el.id === allShipsArr[i].id) {
+        allShipsArr.splice(i, 1);  // удаляет из массива убитый корабль
+      }
+    }
+    
     // console.log(allShipsArr);
 
     //  проверка все ли убиты - конец игры !
@@ -113,8 +118,9 @@ const handleClick = e => {
         e.target.classList = "damage";
         e.target.disabled = 'true';
         checkIsKilled(el);
-      } else {
-        e.target.classList = "miss";
+      } 
+      if (e.target.classList.value !== "damage" && e.target.classList.value !== "killed" ) {
+         e.target.classList = "miss";
       }
     }
   }
