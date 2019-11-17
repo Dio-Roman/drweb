@@ -72,7 +72,7 @@ floorsForAllShips.map((el, i)=> {
   allShipsArr.push(createShip(el, i)) ;
 })
 
-console.log(allShipsArr);
+// console.log(allShipsArr);
 
 const checkIsKilled = (el) => {
   if (el.position.length === el.damageCount) {
@@ -99,7 +99,7 @@ const checkIsKilled = (el) => {
 
       // показать статистику
       document.querySelector("#shots").innerHTML = shots;
-      document.querySelector("#percent").innerHTML = hits/shots*100;
+      document.querySelector("#percent").innerHTML = hits/shots*100^0;
 
       document.querySelector(".statistic").style.display ='block';
       sea.style.display ='none';
